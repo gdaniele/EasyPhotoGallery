@@ -5,4 +5,8 @@ import UIKit
   public func hi() {
     print("hi")
   }
+
+  public func thisThis() {
+    print("ok")
+  }
 }
