@@ -7,10 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B35409C91E2DB99D0015D64D /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B35409C71E2DB99D0015D64D /* RxCocoa.framework */; };
+		B35409CA1E2DB99D0015D64D /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B35409C81E2DB99D0015D64D /* RxSwift.framework */; };
+		B35409CC1E2DBA090015D64D /* AssetService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35409CB1E2DBA090015D64D /* AssetService.swift */; };
+		B35409D01E2DBA6C0015D64D /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35409CF1E2DBA6C0015D64D /* Font.swift */; };
+		B35409D21E2DBA7D0015D64D /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35409D11E2DBA7D0015D64D /* Color.swift */; };
+		B35409D41E2DBA930015D64D /* DynamicTypeHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35409D31E2DBA930015D64D /* DynamicTypeHelpers.swift */; };
+		B35409D61E2DBAA80015D64D /* ButtonFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35409D51E2DBAA80015D64D /* ButtonFactory.swift */; };
+		B35B60021E2DAEC600ACC60D /* GalleryDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35B5FF81E2DAEC600ACC60D /* GalleryDataSource.swift */; };
+		B35B60031E2DAEC600ACC60D /* GalleryNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35B5FF91E2DAEC600ACC60D /* GalleryNavigation.swift */; };
+		B35B60041E2DAEC600ACC60D /* GalleryNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35B5FFA1E2DAEC600ACC60D /* GalleryNavigationBar.swift */; };
+		B35B60051E2DAEC600ACC60D /* GalleryPreviewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35B5FFB1E2DAEC600ACC60D /* GalleryPreviewDataSource.swift */; };
+		B35B60061E2DAEC600ACC60D /* GalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35B5FFC1E2DAEC600ACC60D /* GalleryView.swift */; };
+		B35B60071E2DAEC600ACC60D /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35B5FFD1E2DAEC600ACC60D /* GalleryViewController.swift */; };
+		B35B60081E2DAEC600ACC60D /* InadequatePermissionsAlertFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35B5FFE1E2DAEC600ACC60D /* InadequatePermissionsAlertFactory.swift */; };
+		B35B60091E2DAEC600ACC60D /* OtherActionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35B5FFF1E2DAEC600ACC60D /* OtherActionCollectionViewCell.swift */; };
+		B35B600A1E2DAEC600ACC60D /* SelectableCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35B60001E2DAEC600ACC60D /* SelectableCollectionViewCell.swift */; };
+		B35B600B1E2DAEC600ACC60D /* VideoMaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35B60011E2DAEC600ACC60D /* VideoMaskView.swift */; };
+		B3D16DA51E2E7A8900F267A0 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3D16DA41E2E7A8800F267A0 /* Media.xcassets */; };
+		B3D16DB01E2E7F4F00F267A0 /* GalleryRootContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D16DAF1E2E7F4F00F267A0 /* GalleryRootContainerViewController.swift */; };
 		B3E9B6F01E2D773B000BE064 /* EasyPhotoGallery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3E9B6E61E2D773B000BE064 /* EasyPhotoGallery.framework */; };
 		B3E9B6F51E2D773B000BE064 /* EasyPhotoGalleryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E9B6F41E2D773B000BE064 /* EasyPhotoGalleryTests.swift */; };
 		B3E9B6F71E2D773B000BE064 /* EasyPhotoGallery.h in Headers */ = {isa = PBXBuildFile; fileRef = B3E9B6E91E2D773B000BE064 /* EasyPhotoGallery.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B3E9B7011E2D7757000BE064 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E9B7001E2D7757000BE064 /* TestViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,13 +42,31 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B35409C71E2DB99D0015D64D /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = "../Carthage/Checkouts/RxSwift/build/Debug-iphoneos/RxCocoa.framework"; sourceTree = "<group>"; };
+		B35409C81E2DB99D0015D64D /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = "../Carthage/Checkouts/RxSwift/build/Debug-iphoneos/RxSwift.framework"; sourceTree = "<group>"; };
+		B35409CB1E2DBA090015D64D /* AssetService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssetService.swift; sourceTree = "<group>"; };
+		B35409CF1E2DBA6C0015D64D /* Font.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
+		B35409D11E2DBA7D0015D64D /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		B35409D31E2DBA930015D64D /* DynamicTypeHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicTypeHelpers.swift; sourceTree = "<group>"; };
+		B35409D51E2DBAA80015D64D /* ButtonFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonFactory.swift; sourceTree = "<group>"; };
+		B35B5FF81E2DAEC600ACC60D /* GalleryDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryDataSource.swift; sourceTree = "<group>"; };
+		B35B5FF91E2DAEC600ACC60D /* GalleryNavigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryNavigation.swift; sourceTree = "<group>"; };
+		B35B5FFA1E2DAEC600ACC60D /* GalleryNavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryNavigationBar.swift; sourceTree = "<group>"; };
+		B35B5FFB1E2DAEC600ACC60D /* GalleryPreviewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryPreviewDataSource.swift; sourceTree = "<group>"; };
+		B35B5FFC1E2DAEC600ACC60D /* GalleryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryView.swift; sourceTree = "<group>"; };
+		B35B5FFD1E2DAEC600ACC60D /* GalleryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
+		B35B5FFE1E2DAEC600ACC60D /* InadequatePermissionsAlertFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InadequatePermissionsAlertFactory.swift; sourceTree = "<group>"; };
+		B35B5FFF1E2DAEC600ACC60D /* OtherActionCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtherActionCollectionViewCell.swift; sourceTree = "<group>"; };
+		B35B60001E2DAEC600ACC60D /* SelectableCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectableCollectionViewCell.swift; sourceTree = "<group>"; };
+		B35B60011E2DAEC600ACC60D /* VideoMaskView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoMaskView.swift; sourceTree = "<group>"; };
+		B3D16DA41E2E7A8800F267A0 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		B3D16DAF1E2E7F4F00F267A0 /* GalleryRootContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryRootContainerViewController.swift; sourceTree = "<group>"; };
 		B3E9B6E61E2D773B000BE064 /* EasyPhotoGallery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EasyPhotoGallery.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3E9B6E91E2D773B000BE064 /* EasyPhotoGallery.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EasyPhotoGallery.h; sourceTree = "<group>"; };
 		B3E9B6EA1E2D773B000BE064 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B3E9B6EF1E2D773B000BE064 /* EasyPhotoGalleryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasyPhotoGalleryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3E9B6F41E2D773B000BE064 /* EasyPhotoGalleryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyPhotoGalleryTests.swift; sourceTree = "<group>"; };
 		B3E9B6F61E2D773B000BE064 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B3E9B7001E2D7757000BE064 /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +74,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B35409C91E2DB99D0015D64D /* RxCocoa.framework in Frameworks */,
+				B35409CA1E2DB99D0015D64D /* RxSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,12 +90,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B35B5FF71E2DAEC600ACC60D /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				B35409CB1E2DBA090015D64D /* AssetService.swift */,
+				B35409D51E2DBAA80015D64D /* ButtonFactory.swift */,
+				B35409D11E2DBA7D0015D64D /* Color.swift */,
+				B35409D31E2DBA930015D64D /* DynamicTypeHelpers.swift */,
+				B35409CF1E2DBA6C0015D64D /* Font.swift */,
+				B35B5FF81E2DAEC600ACC60D /* GalleryDataSource.swift */,
+				B35B5FF91E2DAEC600ACC60D /* GalleryNavigation.swift */,
+				B35B5FFA1E2DAEC600ACC60D /* GalleryNavigationBar.swift */,
+				B35B5FFB1E2DAEC600ACC60D /* GalleryPreviewDataSource.swift */,
+				B35B5FFC1E2DAEC600ACC60D /* GalleryView.swift */,
+				B35B5FFD1E2DAEC600ACC60D /* GalleryViewController.swift */,
+				B35B5FFE1E2DAEC600ACC60D /* InadequatePermissionsAlertFactory.swift */,
+				B3D16DA41E2E7A8800F267A0 /* Media.xcassets */,
+				B35B5FFF1E2DAEC600ACC60D /* OtherActionCollectionViewCell.swift */,
+				B35B60001E2DAEC600ACC60D /* SelectableCollectionViewCell.swift */,
+				B35B60011E2DAEC600ACC60D /* VideoMaskView.swift */,
+				B3D16DAF1E2E7F4F00F267A0 /* GalleryRootContainerViewController.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		B35B600C1E2DAF9700ACC60D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B35409C71E2DB99D0015D64D /* RxCocoa.framework */,
+				B35409C81E2DB99D0015D64D /* RxSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B3E9B6DC1E2D773B000BE064 = {
 			isa = PBXGroup;
 			children = (
 				B3E9B6E81E2D773B000BE064 /* EasyPhotoGallery */,
 				B3E9B6F31E2D773B000BE064 /* EasyPhotoGalleryTests */,
 				B3E9B6E71E2D773B000BE064 /* Products */,
+				B35B600C1E2DAF9700ACC60D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -75,7 +147,7 @@
 			children = (
 				B3E9B6E91E2D773B000BE064 /* EasyPhotoGallery.h */,
 				B3E9B6EA1E2D773B000BE064 /* Info.plist */,
-				B3E9B7001E2D7757000BE064 /* TestViewController.swift */,
+				B35B5FF71E2DAEC600ACC60D /* Source */,
 			);
 			path = EasyPhotoGallery;
 			sourceTree = "<group>";
@@ -185,6 +257,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3D16DA51E2E7A8900F267A0 /* Media.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,7 +275,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3E9B7011E2D7757000BE064 /* TestViewController.swift in Sources */,
+				B35B600B1E2DAEC600ACC60D /* VideoMaskView.swift in Sources */,
+				B35B60091E2DAEC600ACC60D /* OtherActionCollectionViewCell.swift in Sources */,
+				B35409D61E2DBAA80015D64D /* ButtonFactory.swift in Sources */,
+				B35409D41E2DBA930015D64D /* DynamicTypeHelpers.swift in Sources */,
+				B35B60071E2DAEC600ACC60D /* GalleryViewController.swift in Sources */,
+				B35B60061E2DAEC600ACC60D /* GalleryView.swift in Sources */,
+				B35B600A1E2DAEC600ACC60D /* SelectableCollectionViewCell.swift in Sources */,
+				B35B60031E2DAEC600ACC60D /* GalleryNavigation.swift in Sources */,
+				B35B60041E2DAEC600ACC60D /* GalleryNavigationBar.swift in Sources */,
+				B3D16DB01E2E7F4F00F267A0 /* GalleryRootContainerViewController.swift in Sources */,
+				B35409D01E2DBA6C0015D64D /* Font.swift in Sources */,
+				B35B60051E2DAEC600ACC60D /* GalleryPreviewDataSource.swift in Sources */,
+				B35409D21E2DBA7D0015D64D /* Color.swift in Sources */,
+				B35B60021E2DAEC600ACC60D /* GalleryDataSource.swift in Sources */,
+				B35409CC1E2DBA090015D64D /* AssetService.swift in Sources */,
+				B35B60081E2DAEC600ACC60D /* InadequatePermissionsAlertFactory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

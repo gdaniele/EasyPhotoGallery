@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B3B51A651E2E7271001E4991 /* EasyPhotoGallery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3B51A641E2E7271001E4991 /* EasyPhotoGallery.framework */; };
+		B3B51A661E2E7271001E4991 /* EasyPhotoGallery.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B3B51A641E2E7271001E4991 /* EasyPhotoGallery.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B3B51A691E2E729E001E4991 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3B51A681E2E729E001E4991 /* RxCocoa.framework */; };
+		B3B51A6A1E2E729E001E4991 /* RxCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B3B51A681E2E729E001E4991 /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B3B51A6C1E2E72A3001E4991 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3B51A6B1E2E72A3001E4991 /* RxSwift.framework */; };
+		B3B51A6D1E2E72A3001E4991 /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B3B51A6B1E2E72A3001E4991 /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B3D16DAA1E2E7DE200F267A0 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3D16DA91E2E7DE200F267A0 /* Media.xcassets */; };
 		B3E9B6BD1E2D7615000BE064 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E9B6BC1E2D7615000BE064 /* AppDelegate.swift */; };
 		B3E9B6C41E2D7615000BE064 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3E9B6C31E2D7615000BE064 /* Assets.xcassets */; };
 		B3E9B6C71E2D7615000BE064 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3E9B6C51E2D7615000BE064 /* LaunchScreen.storyboard */; };
@@ -23,7 +30,27 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		B3B51A671E2E7271001E4991 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B3B51A6A1E2E729E001E4991 /* RxCocoa.framework in Embed Frameworks */,
+				B3B51A661E2E7271001E4991 /* EasyPhotoGallery.framework in Embed Frameworks */,
+				B3B51A6D1E2E72A3001E4991 /* RxSwift.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		B3B51A641E2E7271001E4991 /* EasyPhotoGallery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = EasyPhotoGallery.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3B51A681E2E729E001E4991 /* RxCocoa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxCocoa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3B51A6B1E2E72A3001E4991 /* RxSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3D16DA91E2E7DE200F267A0 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		B3E9B6B91E2D7615000BE064 /* EasyPhotoGallery-Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EasyPhotoGallery-Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3E9B6BC1E2D7615000BE064 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B3E9B6C31E2D7615000BE064 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -39,6 +66,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3B51A691E2E729E001E4991 /* RxCocoa.framework in Frameworks */,
+				B3B51A651E2E7271001E4991 /* EasyPhotoGallery.framework in Frameworks */,
+				B3B51A6C1E2E72A3001E4991 /* RxSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,12 +82,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B38FFD381E2DBCE4004F4766 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B3B51A6B1E2E72A3001E4991 /* RxSwift.framework */,
+				B3B51A681E2E729E001E4991 /* RxCocoa.framework */,
+				B3B51A641E2E7271001E4991 /* EasyPhotoGallery.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B3E9B6B01E2D7615000BE064 = {
 			isa = PBXGroup;
 			children = (
 				B3E9B6BB1E2D7615000BE064 /* EasyPhotoGallery-Example */,
 				B3E9B6D01E2D7615000BE064 /* EasyPhotoGallery-ExampleTests */,
 				B3E9B6BA1E2D7615000BE064 /* Products */,
+				B38FFD381E2DBCE4004F4766 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -75,6 +116,7 @@
 			children = (
 				B3E9B6BC1E2D7615000BE064 /* AppDelegate.swift */,
 				B3E9B6C31E2D7615000BE064 /* Assets.xcassets */,
+				B3D16DA91E2E7DE200F267A0 /* Media.xcassets */,
 				B3E9B6C51E2D7615000BE064 /* LaunchScreen.storyboard */,
 				B3E9B6C81E2D7615000BE064 /* Info.plist */,
 			);
@@ -100,6 +142,7 @@
 				B3E9B6B51E2D7615000BE064 /* Sources */,
 				B3E9B6B61E2D7615000BE064 /* Frameworks */,
 				B3E9B6B71E2D7615000BE064 /* Resources */,
+				B3B51A671E2E7271001E4991 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -176,6 +219,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3E9B6C71E2D7615000BE064 /* LaunchScreen.storyboard in Resources */,
+				B3D16DAA1E2E7DE200F267A0 /* Media.xcassets in Resources */,
 				B3E9B6C41E2D7615000BE064 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -396,6 +440,7 @@
 				B3E9B6D81E2D7615000BE064 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B3E9B6D91E2D7615000BE064 /* Build configuration list for PBXNativeTarget "EasyPhotoGallery-ExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -404,6 +449,7 @@
 				B3E9B6DB1E2D7615000BE064 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
