@@ -32,7 +32,6 @@ class GalleryView: UIView, GalleryCellLayoutProvider {
   var itemSize: CGSize?
   // MARK: UI
   let galleryCollectionView: UICollectionView
-  private let navigationBar: GalleryNavigationBar
   private var layout: GalleryViewLayout = GalleryViewLayout(cellsAcross: 3, interitemSpacing: 2, lineSpacing: 2)
 
   override init(frame: CGRect) {
@@ -40,7 +39,6 @@ class GalleryView: UIView, GalleryCellLayoutProvider {
     self.galleryCollectionViewLayout = UICollectionViewFlowLayout()
     self.galleryCollectionView = UICollectionView(frame: CGRect.zero,
                                                   collectionViewLayout: galleryCollectionViewLayout)
-    self.navigationBar = GalleryNavigationBar()
     super.init(frame: frame)
     setUpUI()
     setUpCollectionViewLayout()
@@ -68,21 +66,16 @@ class GalleryView: UIView, GalleryCellLayoutProvider {
     galleryCollectionView.backgroundColor = UIColor.gray.withAlphaComponent(0.2)
     galleryCollectionView.alwaysBounceVertical = true
 
-    [galleryCollectionView, navigationBar].forEach({ subview in
-      subview.translatesAutoresizingMaskIntoConstraints = false
-      addSubview(subview)
-    })
-    navigationBar.topAnchor.constraint(equalTo: topAnchor).isActive = true
-    galleryCollectionView.topAnchor.constraint(equalTo: navigationBar.bottomAnchor).isActive = true
+    galleryCollectionView.translatesAutoresizingMaskIntoConstraints = false
+    addSubview(galleryCollectionView)
+    galleryCollectionView.topAnchor.constraint(equalTo: topAnchor).isActive = true
 
     let bottomAnchorConstraint = galleryCollectionView.bottomAnchor.constraint(equalTo: bottomAnchor)
     bottomAnchorConstraint.priority = UILayoutPriorityDefaultHigh
     bottomAnchorConstraint.isActive = true
 
-    [galleryCollectionView, navigationBar].forEach({ sidePinnedView in
-      sidePinnedView.leadingAnchor.constraint(equalTo: leadingAnchor).isActive = true
-      sidePinnedView.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
-    })
+    galleryCollectionView.leadingAnchor.constraint(equalTo: leadingAnchor).isActive = true
+    galleryCollectionView.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
   }
 
   private func setUpCollectionViewLayout() {

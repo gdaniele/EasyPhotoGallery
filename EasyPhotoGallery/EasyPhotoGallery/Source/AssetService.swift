@@ -19,6 +19,7 @@ struct PHAssetService: AssetService {
     let options = PHFetchOptions()
     options.sortDescriptors = [NSSortDescriptor(key: "creationDate", ascending: false,
                                               selector: nil)]
+    options.predicate = NSPredicate(format: "mediaType = %d", PHAssetMediaType.image.rawValue)
     let cameraRollCollection = getCameraRollCollection()
     guard let cameraRoll = cameraRollCollection else { fatalError() }
     let cameraRollAssets = PHAsset.fetchAssets(in: cameraRoll,

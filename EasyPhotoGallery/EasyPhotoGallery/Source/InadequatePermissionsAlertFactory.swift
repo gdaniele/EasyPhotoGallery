@@ -5,8 +5,8 @@ import UIKit
  */
 struct InadequatePermissionsAlertFactory {
   static func make() -> UIAlertController {
-    let alert = UIAlertController(title: "Use your camera?",
-                                  message: "Camera and/or photo library permissions are needed to pick a profile picture",
+    let alert = UIAlertController(title: "Use your camera and library?",
+                                  message: "Camera and/or photo library permissions are needed to choose an image",
                                   preferredStyle: .alert)
     alert.addAction(UIAlertAction(title: "Yes",
                                   style: .default,

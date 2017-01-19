@@ -2,21 +2,13 @@ import AVFoundation
 import Photos
 import RxSwift
 
-/**
- `GalleryViewControllerDelegate` is the delegate for `GalleryViewController`
- */
-public protocol GalleryViewControllerDelegate: class {
-  func didPickImage(galleryViewController: GalleryViewController,
-                      image: UIImage)
-  func didDismiss(galleryViewController: GalleryViewController)
-}
-
 /*
  Controller for gallery UX (choose content to add to a collection)
  */
-public class GalleryViewController: UIViewController {
+class GalleryViewController: UIViewController {
   // MARK: Data concerns
   fileprivate var dataSource: GalleryViewControllerDataSource
+  fileprivate let imageManager: PHCachingImageManager
   fileprivate var galleryDataSource: GalleryDataSource? {
     return dataSource as? GalleryDataSource
   }
@@ -28,28 +20,47 @@ public class GalleryViewController: UIViewController {
   // MARK: Service
   private let assetService: AssetService.Type = PHAssetService.self
   fileprivate var fetchResult: PHFetchResult<PHAsset>?
+  // MARK: State
+  fileprivate var selectedImage: UIImage? {
+    didSet {
+      if selectedImage == nil {
+        navigationItem.rightBarButtonItem = nil
+      } else {
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Next",
+                                                            style: .done,
+                                                            target: self,
+                                                            action: #selector(GalleryViewController.nextButtonPressed))
+      }
+    }
+  }
   // MARK: Rx
   private let disposeBag: DisposeBag
 
-  public required init(navigator: GalleryNavigation) {
+  required init(navigator: GalleryNavigation) {
     self.dataSource = GalleryPreviewDataSource()
     self.disposeBag = DisposeBag()
+    self.imageManager = PHCachingImageManager()
     self.navigator = navigator
     self.thumbnailSize = CGSize(width: 150, height: 150) // placeholder size until can be computed
     super.init(nibName: nil, bundle: nil)
-
     swapDataSourceIfNecessary()
     self.galleryView.galleryCollectionView.dataSource = self.dataSource
     setUpCollectionView()
     addApplicationActiveListeners()
+
+    // nav controller set up
+    navigationItem.leftBarButtonItem
+      = UIBarButtonItem(barButtonSystemItem: .cancel,
+                        target: self,
+                        action: #selector(GalleryViewController.backButtonPressed))
   }
 
-  public convenience init(layout: GalleryViewLayout, navigator: GalleryNavigation) {
+  convenience init(layout: GalleryViewLayout, navigator: GalleryNavigation) {
     self.init(navigator: navigator)
     galleryView.setLayout(layout)
   }
 
-  public required init?(coder aDecoder: NSCoder) {
+  required init?(coder aDecoder: NSCoder) {
     fatalError("init(coder:) has not been implemented")
   }
 
@@ -57,9 +68,22 @@ public class GalleryViewController: UIViewController {
     PHPhotoLibrary.shared().unregisterChangeObserver(self)
   }
 
+  // MARK: Selectors
+
+  func backButtonPressed() {
+    navigator.navigateBack()
+  }
+
+  func nextButtonPressed() {
+    guard let image = selectedImage else {
+      return
+    }
+    navigator.navigateNext(image: image)
+  }
+
   // MARK: UI
 
-  public override func loadView() {
+  override func loadView() {
     let galleryView = GalleryView()
     self.view = galleryView
   }
@@ -160,18 +184,31 @@ extension GalleryViewController: OtherActionCollectionViewCellDelegate {
 // MARK: UICollectionViewDelegate
 
 extension GalleryViewController: UICollectionViewDelegate {
-  public func collectionView(_ collectionView: UICollectionView, shouldSelectItemAt indexPath: IndexPath) -> Bool {
+  func collectionView(_ collectionView: UICollectionView, shouldSelectItemAt indexPath: IndexPath) -> Bool {
     if indexPath.item < dataSource.firstSelectableItem.item {
       return false
     }
     return true
+  }
+
+  func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+    if let asset = galleryDataSource?.fetchResult.object(at: indexPath.item) {
+      imageManager.requestImage(for: asset,
+                                targetSize: CGSize(width: 500, height: 500),
+                                contentMode: .aspectFill,
+                                options: nil,
+                                resultHandler: { result, info in
+                                  guard let image = result else { return }
+                                  self.selectedImage = image
+      })
+    }
   }
 }
 
 // MARK: PHPhotoLibraryChangeObserver
 extension GalleryViewController: PHPhotoLibraryChangeObserver {
 
-  public func photoLibraryDidChange(_ changeInstance: PHChange) {
+  func photoLibraryDidChange(_ changeInstance: PHChange) {
 
     guard let changes = changeInstance.changeDetails(for: fetchResult as! PHFetchResult<AnyObject> as! PHFetchResult<PHObject>)
       else { return }

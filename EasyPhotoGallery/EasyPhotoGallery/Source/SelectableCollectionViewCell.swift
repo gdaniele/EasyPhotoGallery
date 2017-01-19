@@ -63,11 +63,12 @@ class SelectableCollectionViewCell: UICollectionViewCell {
   func animate(selected: Bool) {
     if selected {
       let animation = CABasicAnimation(keyPath: "borderColor")
+      let blue = UIColor(red: 0.27, green: 0.50, blue: 0.84, alpha: 1.0)
       animation.fromValue = UIColor.clear.cgColor
-      animation.toValue = UIColor.blue.cgColor
+      animation.toValue = blue.cgColor
       animation.duration = 0.2
       layer.add(animation, forKey: "borderColorAnimation")
-      layer.borderColor = UIColor.blue.cgColor
+      layer.borderColor = blue.cgColor
     } else {
       layer.borderColor = UIColor.clear.cgColor
     }

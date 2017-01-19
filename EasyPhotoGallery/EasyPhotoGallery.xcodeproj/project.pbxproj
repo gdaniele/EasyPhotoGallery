@@ -16,7 +16,6 @@
 		B35409D61E2DBAA80015D64D /* ButtonFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35409D51E2DBAA80015D64D /* ButtonFactory.swift */; };
 		B35B60021E2DAEC600ACC60D /* GalleryDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35B5FF81E2DAEC600ACC60D /* GalleryDataSource.swift */; };
 		B35B60031E2DAEC600ACC60D /* GalleryNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35B5FF91E2DAEC600ACC60D /* GalleryNavigation.swift */; };
-		B35B60041E2DAEC600ACC60D /* GalleryNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35B5FFA1E2DAEC600ACC60D /* GalleryNavigationBar.swift */; };
 		B35B60051E2DAEC600ACC60D /* GalleryPreviewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35B5FFB1E2DAEC600ACC60D /* GalleryPreviewDataSource.swift */; };
 		B35B60061E2DAEC600ACC60D /* GalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35B5FFC1E2DAEC600ACC60D /* GalleryView.swift */; };
 		B35B60071E2DAEC600ACC60D /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35B5FFD1E2DAEC600ACC60D /* GalleryViewController.swift */; };
@@ -51,7 +50,6 @@
 		B35409D51E2DBAA80015D64D /* ButtonFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonFactory.swift; sourceTree = "<group>"; };
 		B35B5FF81E2DAEC600ACC60D /* GalleryDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryDataSource.swift; sourceTree = "<group>"; };
 		B35B5FF91E2DAEC600ACC60D /* GalleryNavigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryNavigation.swift; sourceTree = "<group>"; };
-		B35B5FFA1E2DAEC600ACC60D /* GalleryNavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryNavigationBar.swift; sourceTree = "<group>"; };
 		B35B5FFB1E2DAEC600ACC60D /* GalleryPreviewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryPreviewDataSource.swift; sourceTree = "<group>"; };
 		B35B5FFC1E2DAEC600ACC60D /* GalleryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryView.swift; sourceTree = "<group>"; };
 		B35B5FFD1E2DAEC600ACC60D /* GalleryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
@@ -100,8 +98,8 @@
 				B35409CF1E2DBA6C0015D64D /* Font.swift */,
 				B35B5FF81E2DAEC600ACC60D /* GalleryDataSource.swift */,
 				B35B5FF91E2DAEC600ACC60D /* GalleryNavigation.swift */,
-				B35B5FFA1E2DAEC600ACC60D /* GalleryNavigationBar.swift */,
 				B35B5FFB1E2DAEC600ACC60D /* GalleryPreviewDataSource.swift */,
+				B3D16DAF1E2E7F4F00F267A0 /* GalleryRootContainerViewController.swift */,
 				B35B5FFC1E2DAEC600ACC60D /* GalleryView.swift */,
 				B35B5FFD1E2DAEC600ACC60D /* GalleryViewController.swift */,
 				B35B5FFE1E2DAEC600ACC60D /* InadequatePermissionsAlertFactory.swift */,
@@ -109,7 +107,6 @@
 				B35B5FFF1E2DAEC600ACC60D /* OtherActionCollectionViewCell.swift */,
 				B35B60001E2DAEC600ACC60D /* SelectableCollectionViewCell.swift */,
 				B35B60011E2DAEC600ACC60D /* VideoMaskView.swift */,
-				B3D16DAF1E2E7F4F00F267A0 /* GalleryRootContainerViewController.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -283,7 +280,6 @@
 				B35B60061E2DAEC600ACC60D /* GalleryView.swift in Sources */,
 				B35B600A1E2DAEC600ACC60D /* SelectableCollectionViewCell.swift in Sources */,
 				B35B60031E2DAEC600ACC60D /* GalleryNavigation.swift in Sources */,
-				B35B60041E2DAEC600ACC60D /* GalleryNavigationBar.swift in Sources */,
 				B3D16DB01E2E7F4F00F267A0 /* GalleryRootContainerViewController.swift in Sources */,
 				B35409D01E2DBA6C0015D64D /* Font.swift in Sources */,
 				B35B60051E2DAEC600ACC60D /* GalleryPreviewDataSource.swift in Sources */,
