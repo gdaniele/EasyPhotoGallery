@@ -7,7 +7,4 @@
    <FileRef
       location = "group:../EasyPhotoGallery/EasyPhotoGallery.xcodeproj">
    </FileRef>
-   <FileRef
-      location = "group:../Carthage/Checkouts/RxSwift/Rx.xcodeproj">
-   </FileRef>
 </Workspace>

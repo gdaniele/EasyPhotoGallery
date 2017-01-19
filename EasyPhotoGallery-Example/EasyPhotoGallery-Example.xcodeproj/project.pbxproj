@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B35AB2081E306DAA00F40BAA /* EasyPhotoGallery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B35AB2071E306DAA00F40BAA /* EasyPhotoGallery.framework */; };
-		B35AB2091E306DAA00F40BAA /* EasyPhotoGallery.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B35AB2071E306DAA00F40BAA /* EasyPhotoGallery.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		B3B51A691E2E729E001E4991 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3B51A681E2E729E001E4991 /* RxCocoa.framework */; };
-		B3B51A6A1E2E729E001E4991 /* RxCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B3B51A681E2E729E001E4991 /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		B3B51A6C1E2E72A3001E4991 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3B51A6B1E2E72A3001E4991 /* RxSwift.framework */; };
-		B3B51A6D1E2E72A3001E4991 /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B3B51A6B1E2E72A3001E4991 /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		B3D16DAA1E2E7DE200F267A0 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3D16DA91E2E7DE200F267A0 /* Media.xcassets */; };
+		B3418BDB1E31295200221A62 /* EasyPhotoGallery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3418BDA1E31295200221A62 /* EasyPhotoGallery.framework */; };
+		B3418BDC1E31295200221A62 /* EasyPhotoGallery.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B3418BDA1E31295200221A62 /* EasyPhotoGallery.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B3418BF41E312C6900221A62 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3418BF21E312C6900221A62 /* RxCocoa.framework */; };
+		B3418BF51E312C6900221A62 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3418BF31E312C6900221A62 /* RxSwift.framework */; };
+		B3418BF61E312C7100221A62 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3418BF21E312C6900221A62 /* RxCocoa.framework */; };
+		B3418BF71E312C7100221A62 /* RxCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B3418BF21E312C6900221A62 /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B3418BF81E312C7100221A62 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3418BF31E312C6900221A62 /* RxSwift.framework */; };
+		B3418BF91E312C7100221A62 /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B3418BF31E312C6900221A62 /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B3E9B6BD1E2D7615000BE064 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E9B6BC1E2D7615000BE064 /* AppDelegate.swift */; };
 		B3E9B6C41E2D7615000BE064 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3E9B6C31E2D7615000BE064 /* Assets.xcassets */; };
 		B3E9B6C71E2D7615000BE064 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3E9B6C51E2D7615000BE064 /* LaunchScreen.storyboard */; };
@@ -37,9 +38,9 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				B3B51A6A1E2E729E001E4991 /* RxCocoa.framework in Embed Frameworks */,
-				B3B51A6D1E2E72A3001E4991 /* RxSwift.framework in Embed Frameworks */,
-				B35AB2091E306DAA00F40BAA /* EasyPhotoGallery.framework in Embed Frameworks */,
+				B3418BF71E312C7100221A62 /* RxCocoa.framework in Embed Frameworks */,
+				B3418BDC1E31295200221A62 /* EasyPhotoGallery.framework in Embed Frameworks */,
+				B3418BF91E312C7100221A62 /* RxSwift.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -47,10 +48,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		B35AB2071E306DAA00F40BAA /* EasyPhotoGallery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = EasyPhotoGallery.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B3B51A681E2E729E001E4991 /* RxCocoa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxCocoa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B3B51A6B1E2E72A3001E4991 /* RxSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B3D16DA91E2E7DE200F267A0 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		B3418BDA1E31295200221A62 /* EasyPhotoGallery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = EasyPhotoGallery.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3418BF21E312C6900221A62 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RxCocoa.framework; sourceTree = "<group>"; };
+		B3418BF31E312C6900221A62 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RxSwift.framework; sourceTree = "<group>"; };
 		B3E9B6B91E2D7615000BE064 /* EasyPhotoGallery-Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EasyPhotoGallery-Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3E9B6BC1E2D7615000BE064 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B3E9B6C31E2D7615000BE064 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -66,9 +66,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3B51A691E2E729E001E4991 /* RxCocoa.framework in Frameworks */,
-				B3B51A6C1E2E72A3001E4991 /* RxSwift.framework in Frameworks */,
-				B35AB2081E306DAA00F40BAA /* EasyPhotoGallery.framework in Frameworks */,
+				B3418BF81E312C7100221A62 /* RxSwift.framework in Frameworks */,
+				B3418BF61E312C7100221A62 /* RxCocoa.framework in Frameworks */,
+				B3418BF41E312C6900221A62 /* RxCocoa.framework in Frameworks */,
+				B3418BDB1E31295200221A62 /* EasyPhotoGallery.framework in Frameworks */,
+				B3418BF51E312C6900221A62 /* RxSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,9 +87,9 @@
 		B38FFD381E2DBCE4004F4766 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B35AB2071E306DAA00F40BAA /* EasyPhotoGallery.framework */,
-				B3B51A6B1E2E72A3001E4991 /* RxSwift.framework */,
-				B3B51A681E2E729E001E4991 /* RxCocoa.framework */,
+				B3418BDA1E31295200221A62 /* EasyPhotoGallery.framework */,
+				B3418BF21E312C6900221A62 /* RxCocoa.framework */,
+				B3418BF31E312C6900221A62 /* RxSwift.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -116,7 +118,6 @@
 			children = (
 				B3E9B6BC1E2D7615000BE064 /* AppDelegate.swift */,
 				B3E9B6C31E2D7615000BE064 /* Assets.xcassets */,
-				B3D16DA91E2E7DE200F267A0 /* Media.xcassets */,
 				B3E9B6C51E2D7615000BE064 /* LaunchScreen.storyboard */,
 				B3E9B6C81E2D7615000BE064 /* Info.plist */,
 			);
@@ -219,7 +220,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3E9B6C71E2D7615000BE064 /* LaunchScreen.storyboard in Resources */,
-				B3D16DAA1E2E7DE200F267A0 /* Media.xcassets in Resources */,
 				B3E9B6C41E2D7615000BE064 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -370,6 +370,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6K6CP7SKQB;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "EasyPhotoGallery-Example/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.giancarlo.EasyPhotoGallery-Example";
@@ -383,6 +387,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6K6CP7SKQB;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "EasyPhotoGallery-Example/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.giancarlo.EasyPhotoGallery-Example";

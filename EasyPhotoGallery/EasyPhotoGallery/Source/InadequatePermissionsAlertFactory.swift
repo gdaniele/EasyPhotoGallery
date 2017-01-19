@@ -12,7 +12,7 @@ struct InadequatePermissionsAlertFactory {
                                   style: .default,
                                   handler: { (action) in
                                     guard let settingsURL = NSURL(string: UIApplicationOpenSettingsURLString) as? URL else { return }
-                                    UIApplication.shared.openURL(settingsURL)
+                                    UIApplication.shared.open(settingsURL, options: [:], completionHandler: nil)
     }))
     return alert
   }

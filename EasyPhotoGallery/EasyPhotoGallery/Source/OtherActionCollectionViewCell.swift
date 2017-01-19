@@ -27,9 +27,13 @@ class OtherActionCollectionViewCell: UICollectionViewCell {
     var image: UIImage {
       switch self {
       case .camera:
-        return #imageLiteral(resourceName: "camera")
+        return UIImage(named: "camera",
+                       in: Bundle(for: OtherActionCollectionViewCell.self),
+                       compatibleWith: nil)!
       case .library:
-        return #imageLiteral(resourceName: "library")
+        return UIImage(named: "library",
+                       in: Bundle(for: OtherActionCollectionViewCell.self),
+                       compatibleWith: nil)!
       }
     }
   }
@@ -38,12 +42,14 @@ class OtherActionCollectionViewCell: UICollectionViewCell {
 
   override init(frame: CGRect) {
     self.disposeBag = DisposeBag()
-    self.errorView = UIImageView(image: #imageLiteral(resourceName: "error-outline"))
+    self.errorView = UIImageView(image: UIImage(named: "error-outline",
+                                                in: Bundle(for: type(of: self)),
+                                                compatibleWith: nil)!)
     self.imageView = UIImageView(frame: CGRect.zero)
     super.init(frame: frame)
     setUpUI()
   }
-  
+
   required init?(coder aDecoder: NSCoder) {
     fatalError("init(coder:) has not been implemented")
   }

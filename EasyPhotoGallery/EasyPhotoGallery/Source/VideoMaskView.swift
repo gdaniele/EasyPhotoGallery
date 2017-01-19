@@ -11,7 +11,9 @@ class VideoMaskView: UIView {
   required override init(frame: CGRect) {
     self.durationLabel = UILabel(frame: CGRect.zero)
     self.gradient = CAGradientLayer()
-    self.videoIcon = UIImageView(image: #imageLiteral(resourceName: "video-camera"))
+    self.videoIcon = UIImageView(image: UIImage(named: "video-camera",
+                                                in: Bundle(for: type(of: self)),
+                                                compatibleWith: nil))
     super.init(frame: CGRect.zero)
     setUpUI()
   }
