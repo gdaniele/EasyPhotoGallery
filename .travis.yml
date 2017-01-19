@@ -4,7 +4,7 @@ branches:
   only:
   - master
 
-xcode_project: EasyPhotoGallery/EasyPhotoGallery.xcodeproj
+xcode_project: EasyPhotoGallery/EasyPhotoGallery.xcworkspace
 xcode_scheme: EasyPhotoGallery
 osx_image: xcode8.2
 xcode_sdk: iphoneos10.2
@@ -22,7 +22,7 @@ before_deploy:
 - carthage archive $FRAMEWORK_NAME
 
 script:
-- xcodebuild test -project EasyPhotoGallery/EasyPhotoGallery.xcodeproj -scheme EasyPhotoGallery -destination "platform=iOS Simulator,name=iPhone 7"
+- xcodebuild test -workspace EasyPhotoGallery/EasyPhotoGallery.xcworkspace -scheme EasyPhotoGallery -destination "platform=iOS Simulator,name=iPhone 7"
 
 deploy:
   skip_cleanup: true

@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B3B51A651E2E7271001E4991 /* EasyPhotoGallery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3B51A641E2E7271001E4991 /* EasyPhotoGallery.framework */; };
-		B3B51A661E2E7271001E4991 /* EasyPhotoGallery.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B3B51A641E2E7271001E4991 /* EasyPhotoGallery.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B35AB2081E306DAA00F40BAA /* EasyPhotoGallery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B35AB2071E306DAA00F40BAA /* EasyPhotoGallery.framework */; };
+		B35AB2091E306DAA00F40BAA /* EasyPhotoGallery.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B35AB2071E306DAA00F40BAA /* EasyPhotoGallery.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B3B51A691E2E729E001E4991 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3B51A681E2E729E001E4991 /* RxCocoa.framework */; };
 		B3B51A6A1E2E729E001E4991 /* RxCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B3B51A681E2E729E001E4991 /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B3B51A6C1E2E72A3001E4991 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3B51A6B1E2E72A3001E4991 /* RxSwift.framework */; };
@@ -38,8 +38,8 @@
 			dstSubfolderSpec = 10;
 			files = (
 				B3B51A6A1E2E729E001E4991 /* RxCocoa.framework in Embed Frameworks */,
-				B3B51A661E2E7271001E4991 /* EasyPhotoGallery.framework in Embed Frameworks */,
 				B3B51A6D1E2E72A3001E4991 /* RxSwift.framework in Embed Frameworks */,
+				B35AB2091E306DAA00F40BAA /* EasyPhotoGallery.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -47,7 +47,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		B3B51A641E2E7271001E4991 /* EasyPhotoGallery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = EasyPhotoGallery.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B35AB2071E306DAA00F40BAA /* EasyPhotoGallery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = EasyPhotoGallery.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3B51A681E2E729E001E4991 /* RxCocoa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxCocoa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3B51A6B1E2E72A3001E4991 /* RxSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3D16DA91E2E7DE200F267A0 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
@@ -67,8 +67,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3B51A691E2E729E001E4991 /* RxCocoa.framework in Frameworks */,
-				B3B51A651E2E7271001E4991 /* EasyPhotoGallery.framework in Frameworks */,
 				B3B51A6C1E2E72A3001E4991 /* RxSwift.framework in Frameworks */,
+				B35AB2081E306DAA00F40BAA /* EasyPhotoGallery.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,9 +85,9 @@
 		B38FFD381E2DBCE4004F4766 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B35AB2071E306DAA00F40BAA /* EasyPhotoGallery.framework */,
 				B3B51A6B1E2E72A3001E4991 /* RxSwift.framework */,
 				B3B51A681E2E729E001E4991 /* RxCocoa.framework */,
-				B3B51A641E2E7271001E4991 /* EasyPhotoGallery.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
